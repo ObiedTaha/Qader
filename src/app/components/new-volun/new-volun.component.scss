@@ -1,0 +1,25 @@
+section{
+    background-color:#F8F8FD;
+    h3{
+        color: #0073EB;
+    }
+    .text-area{
+        width: 80%;
+        height: 400px;
+        margin: auto;
+        background-color: #ffffff;
+
+        h5{
+            color: #0073EB;
+        }
+        textarea{
+            border: 1px solid #0073EB;
+            resize: none;
+            &:focus{
+            border: 1px solid #0073EB !important;
+
+            }
+        }
+    }
+
+}

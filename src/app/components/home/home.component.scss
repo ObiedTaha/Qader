@@ -1,0 +1,26 @@
+section {
+    height: 100vh;
+    padding-top: 100px;
+    background-color: #f6f9fc;
+    direction: rtl;
+    background-image: url('../../../assets/images/bacground.png');
+    background-size: 60rem;
+    background-position: -53% 10px;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    h2 {
+
+        color: #0073eb;
+    }
+
+    p {
+        font-family: IBM Plex Sans Arabic;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+}

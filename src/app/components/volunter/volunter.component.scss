@@ -1,0 +1,78 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); // توزيع العناصر بشكل متناسق
+    gap: 20px; // تباعد بين العناصر
+    justify-items: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .shape {
+    width: 110px;
+    height: 110px;
+    border: 2px solid #B0B0B0; // لون افتراضي للإطار
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    img {
+      width: 45px;
+      height: 45px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    p {
+      margin-top: 5px;
+      font-family: "IBM Plex Sans Arabic", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: black;
+      transition: color 0.3s ease-in-out;
+    }
+
+    &:hover {
+      border-color: #007bff;
+      box-shadow: 0 0 8px 3px rgba(0, 123, 255, 0.5);
+    }
+
+    &:hover img {
+      filter: brightness(0) saturate(100%) invert(29%) sepia(99%) saturate(1762%) hue-rotate(202deg) brightness(98%) contrast(93%);
+    }
+
+    &:hover p {
+      color: #007bff;
+    }
+
+    // تأثير التوهج عند النقر (Active)
+    &.active {
+      border-color: #007bff;
+      box-shadow: 0 0 12px 4px rgba(0, 123, 255, 0.7);
+      transform: scale(1.05);
+      background-color: #007bff;
+    }
+
+    &.active img {
+      filter: brightness(0) invert(1);
+    }
+
+    &.active p {
+      color: white;
+    }
+  }
+}

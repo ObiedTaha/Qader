@@ -1,0 +1,13 @@
+<section class="container">
+  <div class="grid-container">
+    <div class="shape" *ngFor="let card of cards; let i = index" (click)="selectCard(i)"
+      [ngClass]="{ 'active': selectedIndex === i }">
+      <div>
+        <img [src]="card.image" class="pt-3" alt="">
+      </div>
+      <div>
+        <p>{{ card.title }}</p>
+      </div>
+    </div>
+  </div>
+</section>

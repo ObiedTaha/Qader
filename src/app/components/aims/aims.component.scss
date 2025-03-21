@@ -1,0 +1,31 @@
+section {
+    height: 100vh;
+    .caption {
+        h2 {
+            color: #0073eb;
+            font-size: 96px;
+            font-weight: 700;
+        }
+    }
+    p{
+        color: #0073eb;
+        font-family: IBM Plex Sans Arabic;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 40.5px;
+        letter-spacing: 0%;
+        text-align: right;
+
+        span{
+            font-size: 75px;
+            color: gray;
+            padding: 20px;
+        }
+    }
+}
+span {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #007bff; // لون مميز للأرقام
+  transition: all 0.1s ease-in-out;
+}

@@ -1,0 +1,76 @@
+<section class="d-flex align-items-center porder-1 w-50 m-auto pb-3" *ngIf="login; else asvolunteer">
+    <div class="container boxShadow justify-content-center align-items-center">
+        <div class="w-75 m-auto">
+            <div>
+                <div class="m-auto d-flex justify-content-center">
+                    <button class="btn btn-primary rounded-0" (click)="login = false">متطوع</button>
+                    <button class="btn btn-outline-primary rounded-0" (click)="login = false">مؤسسات</button>
+                </div>
+                <h2 class="form-title text-center p-5">مرحبًا بعودتك</h2>
+                <form action="">
+                    <div class="position-relative">
+                        <label for="">البريد الالكتروني</label>
+                        <input #inputEmail formControlName="email" type="text" name="email" class="form-control"
+                            id="email" placeholder="mail@gmail.com">
+                    </div>
+                    <div class="position-relative">
+                        <label for="">كلمة المرور</label>
+                        <input #inputPassword formControlName="password" type="password" name="password"
+                            class="form-control" id="password" placeholder="ادخل كلمة المرور....">
+                    </div>
+                    <div>
+                        <input type="checkbox" name="remember me" id="">
+                        <label for="" class="px-3">تذكرني</label>
+                    </div>
+                    <button class="btn btn-primary w-100">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        تسجيل دخول
+                    </button>
+                    <div class="py-4">
+                        <p>ليس لديك حساب؟ <a class="text-decoration-none" href="">سجل الأن</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<ng-template #asvolunteer>
+    <section class="d-flex align-items-center porder-1 w-50 m-auto pb-3">
+        <div class="container boxShadow justify-content-center align-items-center">
+            <div class="w-75 m-auto">
+                <div>
+                    <div class="m-auto d-flex justify-content-center">
+                        <button class="btn btn-outline-primary rounded-0"
+                            (click)="login = true||login=false">متطوع</button>
+                        <button class="btn btn-primary rounded-0">مؤسسات</button>
+                    </div>
+                    <h2 class="form-title text-center p-5">مرحبًا بعودتك</h2>
+                    <form action="">
+                        <div class="position-relative">
+                            <label for="">البريد الالكتروني</label>
+                            <input #inputEmail formControlName="email" type="text" name="email" class="form-control"
+                                id="email" placeholder="mail@gmail.com">
+                        </div>
+                        <div class="position-relative">
+                            <label for="">كلمة المرور</label>
+                            <input #inputPassword formControlName="password" type="password" name="password"
+                                class="form-control" id="password" placeholder="ادخل كلمة المرور....">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="remember me" id="">
+                            <label for="" class="px-3">تذكرني</label>
+                        </div>
+                        <button class="btn btn-primary w-100">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            تسجيل دخول
+                        </button>
+                        <div class="py-4">
+                            <p>ليس لديك حساب؟ <a class="text-decoration-none" href="">سجل الأن</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</ng-template>
