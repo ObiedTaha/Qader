@@ -19,6 +19,7 @@ import { QuestionComponent } from './components/question/question.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { UserComponent } from './components/user/user.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { ToastrModule } from 'ngx-toastr';
     PlatformComponent,
     VolunterComponent,
     NewVolunComponent,
-    QuestionComponent
+    QuestionComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

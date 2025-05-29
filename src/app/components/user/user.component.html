@@ -1,0 +1,69 @@
+<section>
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-2">
+                <img src="../../../assets/images/vision.png" class="rounded-circle img-fluid" alt="">
+            </div>
+            <div class="caption col-md-8 m-auto p-3">
+                <h2>اسم المؤسسة</h2>
+                <h4 class="text-muted">الموقع بالتفصيل</h4>
+                <p>نبذة عن المؤسسة : أهداف المؤسسة , بداية النشأه , مجالات المؤسسة , الخ .............</p>
+            </div>
+            <div class="col-md-2 m-auto">
+                <button class="btn btn-primary rounded-0">تعديل </button>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col-md-10">
+                <div class="mainPage">
+                    <h2>الصفحة الخاصه بالمؤسسة</h2>
+                    <p>www.nameofpage.com</p>
+                    <h5>أرقام التواصل</h5>
+                    <h6>01234567890</h6>
+                </div>
+            </div>
+            <div class="col-md-2 m-auto">
+                <button class="btn btn-primary rounded-0">تعديل </button>
+            </div>
+        </div>
+        <div>
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (opened)="panelOpenState = true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            إضافة فرص تطوعية
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">اسم الفرصة</label>
+                                <input type="text" class="form-control" id="name" placeholder="اسم الفرصة">
+                            </div>
+                            <div class="form-group">
+                                <label for="description">وصف الفرصة</label>
+                                <textarea class="form-control" id="description" placeholder="وصف الفرصة"></textarea>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+        <div>
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (opened)="panelOpenState = true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            عرض الفرص التطوعية
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>منصة قادر للعمل التطوعي تُنظِم وتدير العلاقة بين الجهات الموفرة للفرص التطوعية والمتطوعين في
+                        جمهوية
+                        مصر
+                        العربية للقطاعات (الحكومي، الخاص، غير الربحي)</p>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </div>
+</section>

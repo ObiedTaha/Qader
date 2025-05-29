@@ -7,6 +7,7 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { VolunterComponent } from './components/volunter/volunter.component';
 import { NewVolunComponent } from './components/new-volun/new-volun.component';
 import { QuestionComponent } from './components/question/question.component';
+import { UserComponent } from './components/user/user.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'signin', component: SigninComponent },
   { path: 'new-volun', component: NewVolunComponent },
   { path: 'question', component: QuestionComponent },
+  { path: 'user', component: UserComponent },
   { path: '**', component: NotfoundComponent },
 ];
 

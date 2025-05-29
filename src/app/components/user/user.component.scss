@@ -1,0 +1,54 @@
+.mat-mdc-form-field+.mat-mdc-form-field {
+    margin-left: 8px;
+}
+
+section {
+    .container {
+        .row {
+            .caption {
+
+                h2,
+                p {
+                    color: #0073EB;
+                }
+            }
+        }
+
+        .mainPage {
+
+            h2,
+            h5 {
+                color: #0073EB;
+                font-weight: 600;
+
+            }
+        }
+
+        mat-accordion {
+            ::ng-deep .mat-expansion-panel {
+                background: transparent;
+                box-shadow: none !important;
+                border: none;
+            }
+
+            ::ng-deep .mat-expansion-panel-header {
+
+                mat-panel-title {
+                    font-size: large;
+                    font-weight: 600;
+                    color: blue;
+                }
+
+                .mat-expansion-indicator {
+                    color: #0073EB !important;
+                    margin-left: 10px;
+                }
+            }
+
+            p {
+                color: #007AEC;
+            }
+
+        }
+    }
+}
