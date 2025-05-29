@@ -12,10 +12,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LocationComponent } from './components/location/location.component';
 import { AimsComponent } from './components/aims/aims.component';
 import { PlatformComponent } from './components/platform/platform.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { VolunterComponent } from './components/volunter/volunter.component';
 import { NewVolunComponent } from './components/new-volun/new-volun.component';
-
+import { QuestionComponent } from './components/question/question.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,11 +32,17 @@ import { NewVolunComponent } from './components/new-volun/new-volun.component';
     AimsComponent,
     PlatformComponent,
     VolunterComponent,
-    NewVolunComponent
+    NewVolunComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, ReactiveFormsModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatExpansionModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

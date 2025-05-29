@@ -1,0 +1,57 @@
+.mat-mdc-form-field+.mat-mdc-form-field {
+  margin-left: 8px;
+}
+
+section {
+  background-color: #f8f8fd;
+
+  .bg {
+    width: 90%;
+    padding: 50px 10px;
+    font-weight: 900;
+    font-size: 20px;
+
+    mat-accordion {
+      mat-expansion-panel-header {
+        border: .1px solid blue;
+
+        mat-panel-title {
+          color: blue;
+        }
+      }
+
+      p {
+        color: #007AEC;
+      }
+
+    }
+
+    div {
+      margin: 40px 0;
+      background-color: #fff;
+
+      h2 {
+        font-size: 50px;
+        color: #007AEC;
+      }
+
+      div {
+        margin: 0px;
+
+        textarea {
+          color: gray;
+          width: 95%;
+          height: 100px;
+          border: 1px solid #007AEC ;
+          border-radius: 5px;
+          resize: none;
+        }
+      }
+      .inputs{
+        div{
+          width: 500px;
+        }
+      }
+    }
+  }
+}

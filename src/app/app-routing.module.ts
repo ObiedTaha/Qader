@@ -6,6 +6,7 @@ import { SigninComponent } from './components/signin/signin.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { VolunterComponent } from './components/volunter/volunter.component';
 import { NewVolunComponent } from './components/new-volun/new-volun.component';
+import { QuestionComponent } from './components/question/question.component';
 
 
 const routes: Routes = [
@@ -15,11 +16,12 @@ const routes: Routes = [
   { path: 'volunter', component: VolunterComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'new-volun', component: NewVolunComponent },
+  { path: 'question', component: QuestionComponent },
   { path: '**', component: NotfoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-exports: [RouterModule],
+  exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
